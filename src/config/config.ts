@@ -8,10 +8,9 @@ import { PROMPT } from '.';
 import { RealTimeConfig } from './realTime';
 import { VoiceChatManager } from './voiceChat';
 import { ModuleType, Provider } from './basic';
+import { RTC_APP_ID } from './constants';
 
 import type { IVoiceType } from './voiceChat/tts';
-
-import { RTC_APP_ID } from '../../Server/sensitive';
 
 export class ConfigFactory {
   #realTimeManager: RealTimeConfig;
