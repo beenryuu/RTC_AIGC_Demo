@@ -11,6 +11,8 @@ import { ModuleType, Provider } from './basic';
 
 import type { IVoiceType } from './voiceChat/tts';
 
+import { RTC_APP_ID } from '../../Server/sensitive';
+
 export class ConfigFactory {
   #realTimeManager: RealTimeConfig;
 
@@ -20,7 +22,7 @@ export class ConfigFactory {
    * @note AppId of the RTC
    * @refer https://docs.byteplus.com/en/docs/byteplus-rtc/docs-69865#step-3-create-a-byteplus-rtc-app-and-get-the-appid
    */
-  AppId = 'Your AppId';
+  AppId = RTC_APP_ID;
 
   /**
    * @note RTC RoomId
@@ -43,7 +45,7 @@ export class ConfigFactory {
 
   BotName = 'RobotMan_';
 
-  WelcomeMessage = 'Welcome to use the virtual human model driven by BytePlus Video Cloud RTC';
+  WelcomeMessage = 'おはようございます！';
 
   SystemMessages: string[] = [PROMPT.DEFAULT];
 
